@@ -1,0 +1,19 @@
+.primary {
+    font-size: 15px;
+    border: 1px solid lightseagreen; 
+    border-radius: 0.5rem;
+    padding: 10px 30px;
+    background-color: transparent;
+    transition: 0.3s;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .secondary {
+    font-size: 15px;
+    border: 1px solid lightseagreen; 
+    border-radius: 0.5rem;
+    padding: 10px 30px;
+    background-color: transparent;
+    transition: 0.4s;
+    font-family: 'Nunito', sans-serif;
+  }

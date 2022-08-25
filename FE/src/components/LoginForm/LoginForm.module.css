@@ -1,0 +1,26 @@
+.login-container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 3% 3%;
+    border-radius: 0.5rem;
+    border: 2px solid lightseagreen;
+    background-color: transparent;
+}
+
+.errorMsg {
+    color: tomato;
+    margin-top: -10px;
+  }
+
+.error-input {
+    border: 1px solid tomato;
+}
+
+.login-form-bottom {
+    text-align: center;
+}
+
+.reg-link {
+   margin-left: 5px; 
+   text-decoration: none;
+}
