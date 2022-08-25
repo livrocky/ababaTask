@@ -30,15 +30,15 @@
   }
 
   .img-left {
-      width: 30%;
+      width: 25%;
       position: absolute;
-      left: 2rem;
+      left: 5rem;
   }
   
   .img-right {
-      width: 20%;
+      width: 15%;
       position: absolute;
-      left: 48rem;
+      left: 60rem;
       top: 20rem
 
   }

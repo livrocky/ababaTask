@@ -17,3 +17,13 @@
     transition: 0.4s;
     font-family: 'Nunito', sans-serif;
   }
+
+  button.primary:hover {
+    color:white;
+    background-color: rgb(249, 136, 117);
+}
+
+button.secondary:hover {
+    color:white;
+    background-color: rgb(116, 200, 116);
+}
