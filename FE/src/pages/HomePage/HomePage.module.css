@@ -1,0 +1,21 @@
+.container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.list {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  li {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 10px;
+      border-bottom: 2px solid turquoise;
+  }
+
+  .title {
+      text-align: center;
+  }
