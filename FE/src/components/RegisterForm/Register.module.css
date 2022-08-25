@@ -17,6 +17,7 @@
           border-radius: 0.2rem;
           border: 1px solid lightseagreen;;
           margin-top: 5px;
+          background-color: transparent;
         }
   
   
@@ -35,5 +36,12 @@
       }
   
       .reg-button{
-        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      .nav-link {
+          padding-left: 20px;
+          text-decoration: none;
       }

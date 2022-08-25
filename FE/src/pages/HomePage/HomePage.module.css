@@ -11,10 +11,17 @@
 
   li {
       padding: 10px;
+      transition: 0.2s;
   }
 
+  /* li:hover {
+    transition-timing-function: ease-in;
+    background-color:rgb(32, 178, 171);
+    color: snow;
+  } */
+
   li:nth-child(even) {
-    background-color: rgb(222, 239, 240);
+    background-color:bisque;
    }
 
   .title {

@@ -5,6 +5,7 @@ import * as Yup from 'yup';
 import { baseUrl, myFetch } from '../../utils';
 import Button from '../UI/Button';
 import toast from 'react-hot-toast';
+import { NavLink } from 'react-router-dom';
 
 const initValues = {
   name: '',
@@ -105,6 +106,9 @@ function RegisterForm() {
         <Button button secondary submit>
           Register
         </Button>
+        <NavLink className={css['nav-link']} to={'/login'}>
+          Back
+        </NavLink>
       </div>
     </form>
   );

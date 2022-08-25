@@ -26,7 +26,7 @@ const HomePage = () => {
             logout();
             isUserLoggedIn && toast.success('You are Logged Out');
           }}
-          className={css['nav-link']}
+          className={css['nav-link-logout']}
           to={'/login'}
         >
           Logout
