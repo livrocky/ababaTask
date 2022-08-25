@@ -12,12 +12,6 @@ async function userRegister(req, res) {
   // tikrinam ar yra toks email jau uzregintas
   const foundUser = await findUserByEmail(gautasEmail);
 
-  // jei yra toks email
-  // if (foundUser) {
-  //   res.status(400).json(`User with ${gautasEmail} e-mail already exists.`);
-  //   return;
-  // }
-
   const newUser = {
     name,
     email: gautasEmail,

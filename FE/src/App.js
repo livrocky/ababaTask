@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage/HomePage';
 import LoginPage from './pages/LoginPage/LoginPage.js';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
-import NotFoundPage from './NotFoundPage/NotFoundPage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 function App() {
   return (
