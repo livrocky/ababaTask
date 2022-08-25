@@ -4,7 +4,15 @@
 
 - To run this project, clone this repository (click the green "Code" button on the top right corner and use the HTTPS link) OR press Download ZIP and open the downloaded files with the code editor of your choice 🧘‍♂️
 
-- Rename the .env-example file to .env fill in your back-end details.
+## DATABASE
+
+### Rename the .env-example file to .env fill in your back-end details.
+
+The database only has 1 table with the following entries:
+
+- users (id, name, email, password, reg_timestamp);
+
+`Database sql file is added to the repository to download and import it to phpMyAdmin `
 
 ## Do the following commands to start Back-End and Front-End 💂‍♀️
 
