@@ -4,6 +4,8 @@ import { Toaster } from 'react-hot-toast';
 import HomePage from './pages/HomePage/HomePage';
 import LoginPage from './pages/LoginPage/LoginPage.js';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
+import NotFoundPage from './NotFoundPage/NotFoundPage';
 
 function App() {
   return (
@@ -16,8 +18,11 @@ function App() {
         <Route path={'/login'}>
           <LoginPage />
         </Route>
-        <Route exact path={'/home'}>
+        <ProtectedRoute exact path={'/home'}>
           <HomePage />
+        </ProtectedRoute>
+        <Route path={'*'}>
+          <NotFoundPage />
         </Route>
       </Switch>
     </div>
