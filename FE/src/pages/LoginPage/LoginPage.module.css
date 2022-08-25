@@ -1,3 +1,10 @@
 .title {
     text-align: center;
 }
+
+.img-left {
+    width: 20%;
+    position: absolute;
+    left: 50rem;
+    top: 15rem;
+}
