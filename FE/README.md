@@ -2,6 +2,8 @@
 
 ## HOW TO GET STARTED 🏜
 
+- Download and launch MAMP (for Mac) or XAMPP (for Windows) to run the back-end server.
+
 - To run this project, clone this repository (click the green "Code" button on the top right corner and use the HTTPS link) OR press Download ZIP and open the downloaded files with the code editor of your choice 🧘‍♂️
 
 - Rename the .env-example file to .env fill in your back-end details.
