@@ -5,9 +5,23 @@ import { useAuthCtx } from '../../store/authContext';
 import toast from 'react-hot-toast';
 import unicorn from '../../assets/dab.png';
 import unicorn1 from '../../assets/one.png';
+import { useState } from 'react';
 
 const HomePage = () => {
   const { isUserLoggedIn, logout } = useAuthCtx();
+
+  const [movie, setMovie] = useState([
+    { id: 9, title: 'Sound of Metal' },
+    { id: 1, title: 'Forest Gump' },
+    { id: 2, title: 'The Godfather' },
+    { id: 3, title: 'Eternal Sunshine of the Spotless Mind' },
+    { id: 6, title: 'Call Me by Your Name' },
+    { id: 7, title: 'Top Gun' },
+    { id: 4, title: 'Fear and Loathing is Las Vegas' },
+    { id: 8, title: 'City of God' },
+    { id: 5, title: 'Snatch' },
+  ]);
+
   return (
     <div className={css['container']}>
       <h1 className={css['title']}>MY FAVOURITE MOVIES 🎬</h1>
@@ -16,7 +30,18 @@ const HomePage = () => {
           <img className={css['img-left']} src={unicorn} alt='logo' />
         </div>
         <div>
-          <ul className={css['list']}>
+          {movie &&
+            movie
+              .sort((a, b) => (a.id > b.id ? 1 : -1))
+              .map((film) => {
+                return (
+                  <li key={film.id} className={css['list']}>
+                    {film.id} - {film.title}
+                  </li>
+                );
+              })}
+
+          {/* <ul className={css['list']}>
             <li>Forest Gump</li>
             <li>The Godfather</li>
             <li>Eternal Sunshine of the Spotless Mind</li>
@@ -26,14 +51,11 @@ const HomePage = () => {
             <li>Top Gun</li>
             <li>City of God</li>
             <li>Sound of Metal</li>
-          </ul>
+          </ul> */}
           <div className={css.logo}>
             <img className={css['img-right']} src={unicorn1} alt='logo' />
           </div>
         </div>
-        {/* <div className={css.logo}>
-          <img className={css.img} src={unicorn} alt='logo' />
-        </div> */}
       </div>
 
       <div>

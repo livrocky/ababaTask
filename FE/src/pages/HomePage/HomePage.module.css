@@ -5,7 +5,7 @@
 
 .list {
     list-style-type: none;
-    text-align: center;
+    text-align: left;
     position: relative;
   }
 
@@ -33,14 +33,23 @@
       width: 25%;
       position: absolute;
       left: 5rem;
+      transition: 0.2s;
+  }
+
+  .img-left:hover {
+   width: 30%;
   }
   
   .img-right {
       width: 15%;
       position: absolute;
-      left: 60rem;
-      top: 20rem
+      left: 48rem;
+      top: 16rem;
+      transition: 0.2s;
+  }
 
+  .img-right:hover {
+      width: 20%;
   }
 
   .homeDisplay {
