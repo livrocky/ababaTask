@@ -23,11 +23,11 @@ const HomePage = () => {
     { id: 5, title: 'Snatch' },
   ]);
 
-  const sortAscending = () => {
-    // const { movie } = this.state;
-    movie.sort((a, b) => (a.id > b.id ? 1 : -1));
-    // this.setMovie({ movie });
-  };
+  // const sortAscending = () => {
+  //   const { movie } = this.state;
+  //   movie.sort((a, b) => (a.id > b.id ? 1 : -1));
+  //   this.setMovie({ movie });
+  // };
 
   return (
     <div className={css['container']}>
@@ -39,7 +39,7 @@ const HomePage = () => {
         <div>
           {movie &&
             movie
-              // .sort((a, b) => (a.id > b.id ? 1 : -1))
+              .sort((a, b) => (a.id > b.id ? 1 : -1))
               .map((film) => {
                 return (
                   <ul>
@@ -49,12 +49,9 @@ const HomePage = () => {
                   </ul>
                 );
               })}
-
-          <button onClick={sortAscending()}>ASC</button>
-
-          <div className={css.logo}>
-            <img className={css['img-right']} src={unicorn1} alt='logo' />
-          </div>
+        </div>
+        <div className={css.logo}>
+          <img className={css['img-right']} src={unicorn1} alt='logo' />
         </div>
       </div>
 
