@@ -6,6 +6,7 @@ import toast from 'react-hot-toast';
 import unicorn from '../../assets/dab.png';
 import unicorn1 from '../../assets/one.png';
 import { useState } from 'react';
+// import Button from '../../components/UI/Button';
 
 const HomePage = () => {
   const { isUserLoggedIn, logout } = useAuthCtx();
@@ -22,6 +23,12 @@ const HomePage = () => {
     { id: 5, title: 'Snatch' },
   ]);
 
+  const sortAscending = () => {
+    // const { movie } = this.state;
+    movie.sort((a, b) => (a.id > b.id ? 1 : -1));
+    // this.setMovie({ movie });
+  };
+
   return (
     <div className={css['container']}>
       <h1 className={css['title']}>MY FAVOURITE MOVIES 🎬</h1>
@@ -32,26 +39,19 @@ const HomePage = () => {
         <div>
           {movie &&
             movie
-              .sort((a, b) => (a.id > b.id ? 1 : -1))
+              // .sort((a, b) => (a.id > b.id ? 1 : -1))
               .map((film) => {
                 return (
-                  <li key={film.id} className={css['list']}>
-                    {film.id} - {film.title}
-                  </li>
+                  <ul>
+                    <li key={film.id} className={css['list']}>
+                      {film.id} - {film.title}
+                    </li>
+                  </ul>
                 );
               })}
 
-          {/* <ul className={css['list']}>
-            <li>Forest Gump</li>
-            <li>The Godfather</li>
-            <li>Eternal Sunshine of the Spotless Mind</li>
-            <li>Fear and Loathing in Las Vegas</li>
-            <li>Snatch</li>
-            <li>Call Me by Your Name</li>
-            <li>Top Gun</li>
-            <li>City of God</li>
-            <li>Sound of Metal</li>
-          </ul> */}
+          <button onClick={sortAscending()}>ASC</button>
+
           <div className={css.logo}>
             <img className={css['img-right']} src={unicorn1} alt='logo' />
           </div>

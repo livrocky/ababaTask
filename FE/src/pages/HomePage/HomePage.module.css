@@ -9,20 +9,10 @@
     position: relative;
   }
 
-  li {
-      padding: 10px;
-      transition: 0.2s;
-  }
 
-  /* li:hover {
-    transition-timing-function: ease-in;
-    background-color:rgb(32, 178, 171);
-    color: snow;
-  } */
-
-  li:nth-child(even) {
-    background-color:bisque;
-   }
+li:hover {
+    color: tomato;
+}
 
   .title {
       text-align: center;
@@ -32,7 +22,7 @@
   .img-left {
       width: 25%;
       position: absolute;
-      left: 5rem;
+      left: 3rem;
       transition: 0.2s;
   }
 
