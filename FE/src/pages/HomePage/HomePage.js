@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import css from './HomePage.module.css';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
@@ -22,12 +23,6 @@ const HomePage = () => {
     { id: 8, title: 'City of God' },
     { id: 5, title: 'Snatch' },
   ]);
-
-  // const sortAscending = () => {
-  //   const { movie } = this.state;
-  //   movie.sort((a, b) => (a.id > b.id ? 1 : -1));
-  //   this.setMovie({ movie });
-  // };
 
   return (
     <div className={css['container']}>
