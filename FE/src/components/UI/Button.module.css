@@ -6,6 +6,7 @@
     background-color: transparent;
     transition: 0.3s;
     font-family: 'Nunito', sans-serif;
+    margin: 10px;
   }
 
   .secondary {
@@ -16,6 +17,7 @@
     background-color: transparent;
     transition: 0.4s;
     font-family: 'Nunito', sans-serif;
+    margin: 10px;
   }
 
   button.primary:hover {
