@@ -7,6 +7,7 @@ import unicorn from '../../assets/dab.png';
 import unicorn1 from '../../assets/one.png';
 import { useState } from 'react';
 import Button from '../../components/UI/Button';
+import Icon from '../../components/UI/Icon/Icon';
 
 const HomePage = () => {
   const { isUserLoggedIn, logout } = useAuthCtx();
@@ -37,10 +38,10 @@ const HomePage = () => {
       <h1 className={css['title']}>MY FAVOURITE MOVIES 🎬</h1>
       <div className={css['sort-btns']}>
         <Button button secondary submit onClick={sortAscending} className={['sort-btn']}>
-          <i class='fa fa-arrow-down' aria-hidden='true'></i>
+          <Icon icon='fa-arrow-down' />
         </Button>
         <Button button primary submit onClick={sortDescending} className={['sort-btn']}>
-          <i class='fa fa-arrow-up' aria-hidden='true'></i>
+          <Icon icon='fa-arrow-up' />
         </Button>
       </div>
       <div className={css['homeDisplay']}>
@@ -51,7 +52,7 @@ const HomePage = () => {
           {movie &&
             movie.map((film) => {
               return (
-                <ul>
+                <ul key={film.id}>
                   <li key={film.id} className={css['list']}>
                     {film.id} - {film.title}
                   </li>
